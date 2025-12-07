@@ -89,10 +89,31 @@ Environment variables supported (all prefixed with `UNET3D_`):
 - Example starting point: adapt `train_unet.py` to your dataloaders and call `train_uneted(...)` with early stopping/patience parameters from `model.yaml`.
 
 ## Visual Results
-- Global IoU: ![IoU](experiments/IoU.png)
-- IoU across depth: ![IoU Z-axis](experiments/IoU%20image%20z%20axis.png)
-- Sample predictions: ![Predictions](experiments/model%20predictions.png)
-- Error overlays: ![Overlay](experiments/overlay%20errors.png)
+
+**Global IoU (validación):** `0.xx`
+
+<table>
+  <tr>
+    <td align="center">
+      <b>IoU por clase (validación)</b><br>
+      <img src="experiments/IoU.png" width="420">
+    </td>
+    <td align="center">
+      <b>IoU a lo largo del volumen (validación)</b><br>
+      <img src="experiments/IoU%20image%20z%20axis.png" width="420">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Sample predictions</b><br>
+      <img src="experiments/model%20predictions.png" width="420">
+    </td>
+    <td align="center">
+      <b>Error overlays</b><br>
+      <img src="experiments/overlay%20errors.png" width="420">
+    </td>
+  </tr>
+</table>
 
 ## License
 MIT License. You are free to use, modify, and distribute with attribution and without warranty.
