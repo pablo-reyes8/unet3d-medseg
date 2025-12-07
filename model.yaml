@@ -1,0 +1,43 @@
+name: unet3d-segmentation
+version: 1.0.0
+description: >
+  3D UNet model for volumetric medical segmentation. Trained with min-max
+  normalization and percentiles clipping; exported for online inference via FastAPI
+  and interactive validation via Streamlit.
+framework: pytorch
+task: 3d_segmentation
+inputs:
+  - name: volume
+    type: nifti
+    channels: 1
+    normalization: minmax
+    clip_percentiles: [1, 99]
+    pad_to_multiple: 16
+outputs:
+  - name: mask
+    type: nifti
+    classes:
+      - background
+      - class-1
+      - class-2
+inference:
+  checkpoint: artifacts/unet3d_best.pt
+  device: auto
+  api:
+    app: src.api.main:app
+    host: 0.0.0.0
+    port: 8000
+    predict_endpoint: /v1/predict
+training:
+  entrypoint: src/training/train_unet.py
+  epochs: 100
+  early_stopping:
+    patience: 10
+    metric: mIoU
+  optimizer: adam
+metadata:
+  maintainers:
+    - name: ML Engineering Team
+      email: ml-team@example.com
+  license: MIT
+  repo: .
