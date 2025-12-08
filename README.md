@@ -90,7 +90,6 @@ Environment variables supported (all prefixed with `UNET3D_`):
 
 ## Visual Results
 
-**Global IoU (validación):** `0.xx`
 
 <table>
   <tr>
