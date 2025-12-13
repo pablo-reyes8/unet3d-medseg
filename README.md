@@ -91,25 +91,33 @@ Environment variables supported (all prefixed with `UNET3D_`):
 ## Visual Results
 
 
-<table>
+<h2 align="center">Visual Results</h2>
+
+<table align="center">
+  <!-- Top row: smaller, context metrics -->
   <tr>
-    <td align="center">
-      <b>IoU por clase (validación)</b><br>
-      <img src="experiments/IoU.png" width="420">
+    <td align="center" width="50%">
+      <b>IoU by class (validation)</b><br/>
+      <img src="experiments/IoU.png" width="360" alt="IoU by class (validation)">
     </td>
-    <td align="center">
-      <b>IoU a lo largo del volumen (validación)</b><br>
-      <img src="experiments/IoU%20image%20z%20axis.png" width="420">
+    <td align="center" width="50%">
+      <b>IoU across volume (validation)</b><br/>
+      <img src="experiments/IoU%20image%20z%20axis.png" width="360" alt="IoU across volume (validation)">
     </td>
   </tr>
+
+  <!-- Second row: larger, main qualitative results -->
   <tr>
-    <td align="center">
-      <b>Sample predictions</b><br>
-      <img src="experiments/model%20predictions.png" width="420">
+    <td align="center" colspan="2">
+      <b>Sample predictions</b><br/>
+      <img src="experiments/model%20predictions.png" width="820" alt="Sample predictions">
     </td>
-    <td align="center">
-      <b>Error overlays</b><br>
-      <img src="experiments/overlay%20errors.png" width="420">
+  </tr>
+
+  <tr>
+    <td align="center" colspan="2">
+      <b>Error overlays</b><br/>
+      <img src="experiments/overlay%20errors.png" width="720" alt="Error overlays">
     </td>
   </tr>
 </table>
