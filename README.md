@@ -1,5 +1,14 @@
 # UNet3D Segmentation Suite
 
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+![Repo size](https://img.shields.io/github/repo-size/pablo-reyes8/unet3d-medseg)
+![Last commit](https://img.shields.io/github/last-commit/pablo-reyes8/unet3d-medseg)
+![Open issues](https://img.shields.io/github/issues/pablo-reyes8/unet3d-medseg)
+![Contributors](https://img.shields.io/github/contributors/pablo-reyes8/unet3d-medseg)
+![Forks](https://img.shields.io/github/forks/pablo-reyes8/unet3d-medseg?style=social)
+![Stars](https://img.shields.io/github/stars/pablo-reyes8/unet3d-medseg?style=social)
+
 End-to-end stack for 3D medical image segmentation with a UNet3D backbone. The project is dual-purpose: it contains the training code for volumetric segmentation and a production-grade deployment path (FastAPI + Docker) with an interactive Streamlit front-end for human review.
 
 ## Highlights
